@@ -1,0 +1,30 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[[source]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cu113"
+verify_ssl = true
+
+[packages]
+speechbrain = "==0.5.12"
+huggingface-hub = ">=0.7.0"
+hyperpyyaml = ">=0.0.1"
+joblib = ">=0.14.1"
+numpy = ">=1.17.0"
+pre-commit = ">=2.3.0"
+scipy = ">=1.4.1"
+sentencepiece = ">=0.1.91"
+soundfile = "*"
+torch = {index="pytorch", version="==1.10.2+cu113"}
+torchaudio = {index="pytorch", version="==0.10.2+cu113"}
+tqdm = ">=4.42.0"
+transformers = "*"
+ffmpeg-python = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"
