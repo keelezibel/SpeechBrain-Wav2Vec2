@@ -12,9 +12,9 @@ seed: 1993
 __set_seed: !apply:torch.manual_seed [!ref <seed>]
 
 # Dataset will be downloaded to the `data_original`
-data_original: data
+data_original: SpeechBrain-Wav2Vec2/data
 # Data prepare function will create a modified dataset with structured data
-data_folder: data
+data_folder: SpeechBrain-Wav2Vec2/data
 output_folder: /content/drive/MyDrive/Work/Data/SpeechBrain_Results
 # output_folder: results
 save_folder: !ref <output_folder>/save
