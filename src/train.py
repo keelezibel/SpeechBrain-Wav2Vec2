@@ -2,9 +2,10 @@ import os
 import sys
 import speechbrain as sb
 from speechbrain.utils.parameter_transfer import Pretrainer
-
+from clearml import Task
 from hyperpyyaml import load_hyperpyyaml
 
+# Task.init(project_name="SER", task_name="train_ser")
 
 class EmoIdBrain(sb.Brain):
     def compute_forward(self, batch, stage):
