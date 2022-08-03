@@ -9,6 +9,9 @@ scipy>=1.4.1
 sentencepiece>=0.1.91
 soundfile 
 tqdm>=4.42.0
+torch==1.10.2
+torchaudio==0.10.2
+torchvision
 transformers
 ffmpeg-python
 clearml

@@ -1,4 +1,4 @@
-FROM nvcr.io/nvidia/pytorch:21.10-py3
+FROM python:3.8.13-slim
 
 # Project setup
 ENV VIRTUAL_ENV=/opt/venv
@@ -17,9 +17,7 @@ COPY ./requirements.txt /app/requirements.txt
 RUN pip install -r /app/requirements.txt \
     && rm -rf /root/.cache/pip
 
-# RUN pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu113
-
-COPY . /app
-WORKDIR /app
+# COPY . /app
+# WORKDIR /app
 
 ENTRYPOINT [ "/bin/sh" ]
